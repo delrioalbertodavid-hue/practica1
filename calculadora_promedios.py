@@ -84,7 +84,6 @@ def determinar_estado (calificaciones, umbral):
         umbral=5.0
     for i in range (len(calificaciones)):
             if calificaciones[i]<umbral:
-                print(f"aprobada {i}")
                 lista_reprobadas.append(i)
             else:
                 lista_aprobadas.append(i)
