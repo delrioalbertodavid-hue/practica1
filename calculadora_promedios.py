@@ -103,6 +103,9 @@ def encontrar_extremos (calificaciones):
 def main():
     UMBRAL = 5.0
     materias, calificaciones= ingresar_calificaciones()
+    if not materias:
+        print("No se ingresaron materias. Programa terminado.")
+        return
     promedio = calcular_promedio(calificaciones)
     maximo, minimo = encontrar_extremos(calificaciones)
     aprobadas, reprobadas= determinar_estado(calificaciones,UMBRAL)
